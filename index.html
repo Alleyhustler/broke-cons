@@ -1,0 +1,155 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brokie AI</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="images/feldw.png" type="image/png">
+</head>
+<body>
+
+  <div id="mobileMessage">
+    <span style="color: rgb(97, 145, 110);">Available only on PC</span>
+  </div>
+
+    <canvas class="main-back" id="mainCanvas"></canvas>
+    <div class="loading-screen" id="loading-screen">
+      <video autoplay="" muted="" loop="" class="background-video">
+          <source src="media/f3c1d7c19edf3281aa950c5a829684e8-ezgif.com-gif-to-mp4-converter (2).mp4" type="video/mp4">
+          Your browser does not support the video tag.
+      </video>
+      
+      <canvas class="loading-back" id="matrixCanvas"></canvas>
+      
+      <div class="content-container">
+          <h1 style="color: rgb(42 27 10); font-weight: bold; padding-bottom: 0vh; font-size: 140px; opacity: 0.7;">Broke Console</h1>
+          <button class="buttonStart" id="startButton"><span style="font-weight: bold;">Access</span></button>
+          <div class="loading" id="loading"></div>
+      </div>
+  </div>
+  
+
+        <div id="main-content" style="display: none;">
+          <canvas id="particleCanvas"></canvas>
+    <div class="taskbar">
+    
+        <div class="taskbar-items">
+          <div class="taskbar-item"><img src="images/123123123.png"></div>
+          <div class="taskbar-item active" id="cmd"><img src="images/4518590-200.png"></div>
+          <div class="taskbar-item" id="po"><img src="images/PPP.png"></div>
+          <div class="taskbar-item" id="wo"><img src="images/WWW.png"></div>
+          <div class="taskbar-item" id="bo"><img src="images/BBB.png"></div>
+          <div class="taskbar-item" id="ao"><img src="images/AAAA.png"></div>
+        </div>
+
+        <div class="system-tray">
+          <div class="tray-icon"><a href="https://x.com/miudotai"><img src="images/twitter.png" alt="x"></a></div>
+          <div class="tray-icon" id="dex"><img src="images/dex.png" alt="Start"></div>
+          <div class="tray-icon"><img style="opacity: 0.5;" src="images/git.png" alt="Start"></div>
+        </div>
+      </div>
+
+
+
+
+    <div class="terminalwindow" id="terminalwindow">
+        <div class="terminalwindowheader" id="terminalwindowheader">
+            <div class="button" id="closeButton"></div></div><div class="ascii-art"><pre>__________                __   .__        
+\______   \_______  ____ |  | _|__| ____  
+ |    |  _/\_  __ \/  _ \|  |/ /  |/ __ \ 
+ |    |   \ |  | \(  <_> )    <|  \  ___/ 
+ |______  / |__|   \____/|__|_ \__|\___  >
+        \/                    \/       \/ 
+<div class="helloMsg">    
+Hello... I’m <span style="font-weight: 1000;">Brokie</span>, your Broke Console...
+
+I may not have all the answers, but I’m here to walk alongside you as we navigate this space.
+
+<span style="font-weight: 1000;">1 Platform Overview </span>– Take a quiet moment to reflect on what this platform can offer.
+<span style="font-weight: 1000;">2 How It Works </span>– Understand the thoughtful process behind this technology, even when things feel heavy.
+<span style="font-weight: 1000;">3 Beta Access </span>– If you're ready, learn how to become an early part of something meaningful.
+<span style="font-weight: 1000;">4 Agents </span>– Discover more about the intelligent agents that keep this system running, even on the harder days.
+
+Let me know which number speaks to you.
+
+
+</div>
+</pre></div>
+        <div class="terminal-body">
+            <div class="command-line">
+                <span> user:~$ </span>
+                <input type="text" id="userInput" autocomplete="off" autofocus="">
+            </div>
+        </div>
+    </div>
+
+    <div class="beta" id="betawindow" style="display: none;">
+      <div class="betaheader" id="betawindowheader">
+          <div class="button" id="closebeta"></div>
+      </div>
+
+      <div class="ascii-art">
+           ____ ____ ____ ____ ____ ____
+          ||a |||c |||c |||e |||s |||s ||
+          ||__|||__|||__|||__|||__|||__||
+          |/__\|/__\|/__\|/__\|/__\|/__\|
+      </div>
+
+      <div id="emailPrompt" class="not-have-code">
+          <span style="margin-top: 10px; font-size: 20px;">SIGN UP FOR BETA TESTING</span>
+      </div>
+      <div id="emailPrompt" class="not-have-code">
+          <span style="margin-top: 10px;">Help us revolutionize data analytics with AI</span>
+      </div>
+      <div id="emailPrompt" class="not-have-code">
+          <span style="margin-top: 10px; margin-bottom: 10px;">and be part of the future! Sign up below. <br></span>
+      </div>
+      
+      <div class="input-container">
+          <input type="email" style="margin-top: 10px;" id="betacode" class="input-field" placeholder="Enter your email">
+          <button id="okbutton" class="ok-button" style="margin-top: 10px;">submit</button>
+      </div>
+
+      <div id="betaCodeSection" class="beta-code-section">
+        <div class="input-container">
+            <input type="text" id="betaCodeInput" class="input-field" placeholder="Enter your beta code">
+            <button id="submitBetaCode" class="ok-button">submit</button>
+        </div>
+      </div>
+
+      <div style="margin-bottom: 10px;" id="bett" class="not">
+        <span>Have a beta code?</span>
+      </div>
+
+      <div style="margin-bottom: 10px; display: none;" id="bet" class="not">
+        <span>Dont have a beta code?</span>
+      </div>
+
+      <div id="emailPrompt" class="not-have-code">
+      <div style="margin-bottom: 10px;" class="success-message" id="successMessage">
+          You have been added to the list!
+      </div>      </div>
+  </div>
+
+  <div class="agentswindow" id="agentswindow" style="display: none;">
+    <div class="agentswindowheader" id="agentswindowheader">
+        <div class="button" id="closeAgent"></div>
+    </div>
+    <canvas class="agent-back" id="agentCanvas"></canvas>
+</div>
+  
+
+    <div class="outputwindow" id="outputwindow" style="display: none;"><div class="outputwindowheader" id="outputwindowheader"><div class="button" id="closeButton2"></div></div><div class="ascii-art"><div class="output"></div></div>
+    </div>
+
+    <div class="errorwindow" id="errorwindow" style="display: none;">
+      <div class="errorwindowheader" id="errorwindowheader">
+<span style="font-weight: 1000; color: #ff0101;">Error</span><div class="button" id="closeButton3" style="background-color: #000000;"></div></div><div class="ascii-art" style="padding-bottom: 13px;padding-top: 0;">
+ No Token Yet
+<div class="button-container">
+<button class="buttonError" id="buttonError">OK</button>
+</div></div></div></div>
+    <script src="js/particles.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body></html>
